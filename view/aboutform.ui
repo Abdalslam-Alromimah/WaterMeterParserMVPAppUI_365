@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutForm</class>
+ <widget class="QWidget" name="AboutForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About Water Meter Parser</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Orange_logo.svg.png</normaloff>../Orange_logo.svg.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    border: 2px solid #FF6F61; /* Orange border */
+    border-radius: 8px; /* Rounded corners */
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #333333; /* Dark text */
+	background-color: #FF6F61; /* Light gray */
+    border: 1px solid #F5F5F5; /* Orange accent */
+    padding: 2px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Water Meter Parser</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="descriptionLabel">
+     <property name="text">
+      <string>A comprehensive tool for parsing and analyzing water meter data.
+
+Developed by Salam Romim
+Supervisor by Ahmed Eliass
+ Orange Innovation Egypt</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="versionLabel">
+     <property name="text">
+      <string>Version: 1.0.0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="closeButton">
+     <property name="styleSheet">
+      <string notr="true">/* Buttons */
+QPushButton {
+    background-color: #DDDDDD; /* Orange accent */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    min-width: 100px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #FF3B2F; /* Darker orange */
+}
+
+QPushButton:pressed {
+    background-color: #D32F2F; /* Even darker orange */
+}
+
+QPushButton:disabled {
+    background-color: #FF3B2F;
+    color: #999999;
+}</string>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AboutForm</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

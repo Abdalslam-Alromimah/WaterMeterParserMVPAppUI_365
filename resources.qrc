@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/styles">
+        <file>resources/stylesheets/modern-qt-stylesheet.qss</file>
+        <file>resources/stylesheets/modern-qt-stylesheet1.qss</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>resources/images/splash.jpeg</file>
+    </qresource>
+    <qresource prefix="/doc">
+        <file>resources/doc/html/index.html</file>
+    </qresource>
+	<qresource prefix="/db">
+        <file>resources/db/database.db</file>
+    </qresource>
+</RCC>

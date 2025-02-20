@@ -1,0 +1,269 @@
+/*
+ * Modern Qt UI Stylesheet
+ * White background with orange accents
+ */
+
+/* Global Styling */
+QWidget {
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark text */
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* Main Window */
+QMainWindow {
+    background-color: #FFFFFF;
+}
+
+/* Scroll Area */
+QScrollArea, QScrollArea * {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+/* Group Box */
+QGroupBox {
+    background-color: #F5F5F5; /* Light gray */
+    border: 1px solid #FF6F61; /* Orange accent */
+    border-radius: 8px;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #FF6F61; /* Orange accent */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Labels */
+QLabel {
+    color: #333333; /* Dark text */
+    padding: 2px;
+}
+
+/* Text Inputs */
+QLineEdit, QTextEdit, QTextBrowser {
+    background-color: #F5F5F5;
+    border: 1px solid #FF6F61;
+    border-radius: 6px;
+    padding: 8px;
+    color: #333333; /* Dark text */
+    selection-background-color: #FF6F61; /* Orange accent */
+    selection-color: #FFFFFF;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 2px solid #FF6F61;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #FF6F61; /* Orange accent */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    min-width: 100px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #FF3B2F; /* Darker orange */
+}
+
+QPushButton:pressed {
+    background-color: #D32F2F; /* Even darker orange */
+}
+
+QPushButton:disabled {
+    background-color: #DDDDDD;
+    color: #999999;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #F5F5F5;
+    border: 1px solid #FF6F61;
+    border-radius: 6px;
+    padding: 8px;
+    min-width: 6em;
+    color: #333333; /* Dark text */
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url(down_arrow.png);
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox:on {
+    border: 2px solid #FF6F61;
+}
+
+/* Table Widget */
+QTableWidget {
+    background-color: #F5F5F5;
+    border: 1px solid #FF6F61;
+    border-radius: 6px;
+    gridline-color: #FF6F61;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    color: #333333; /* Dark text */
+}
+
+QTableWidget::item:selected {
+    background-color: #FF6F61;
+    color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: #FFFFFF;
+    color: #FF6F61; /* Orange accent */
+    padding: 8px;
+    border: 1px solid #FF6F61;
+}
+
+/* Date Edit */
+QDateEdit {
+    background-color: #F5F5F5;
+    border: 1px solid #FF6F61;
+    border-radius: 4px;
+    padding: 5px;
+    color: #333333; /* Dark text */
+}
+
+QDateEdit::drop-down {
+    border: none;
+}
+
+/* Checkbox and Radio Button */
+QCheckBox, QRadioButton {
+    color: #333333; /* Dark text */
+    spacing: 5px;
+}
+
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+}
+
+QCheckBox::indicator:unchecked, QRadioButton::indicator:unchecked {
+    background-color: #F5F5F5;
+    border: 2px solid #FF6F61;
+}
+
+QCheckBox::indicator:checked, QRadioButton::indicator:checked {
+    background-color: #FF6F61;
+    border: 2px solid #FF6F61;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background-color: #FFFFFF;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #FF6F61;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #FF3B2F;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: #FFFFFF;
+    height: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #FF6F61;
+    border-radius: 5px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #FF3B2F;
+}
+
+/* Specific Class Styling */
+.warning {
+    color: #FF5555; /* Red for warnings */
+}
+
+.success {
+    color: #50FA7B; /* Green for success */
+}
+
+/* Stacked Widget */
+QStackedWidget {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+/* Specific Water Meter UI Elements */
+#WaterMeterParserView {
+    background-color: #FFFFFF;
+}
+
+#scrollArea {
+    background-color: #FFFFFF;
+}
+
+#scrollAreaWidgetContents {
+    background-color: #FFFFFF;
+}
+
+/* Working Groups */
+#Working_Group, #Month_fixed_group, #Accumulated_Group {
+    background-color: #F5F5F5;
+    border: 1px solid #FF6F61;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Specific Inputs */
+#hexInput, #fileSelector {
+    background-color: #F5F5F5;
+    border: 1px solid #FF6F61;
+    padding: 8px;
+    color: #333333; /* Dark text */
+}
+
+/* Parser Button */
+#parserButton {
+    background-color: #FF6F61; /* Orange accent */
+    color: #FFFFFF;
+    font-weight: bold;
+    min-width: 120px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+#parserButton:hover {
+    background-color: #FF3B2F; /* Darker orange */
+}
+
+#parserButton:pressed {
+    background-color: #D32F2F; /* Even darker orange */
+}
